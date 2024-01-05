@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  align-items: center;
+  background-color: #1a1a1a;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  background-image: url("fundo.gif");
+}
+.titulo {
+  pointer-events: none;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #0c0d0d;
+  position: relative;
+  top: 40px;
+  color: white;
+  font-size: 60px;
+  width: 500px;
+  height: 70px;
+}
+
+.caixalogin {
+  color: white;
+  top: 20%;
+  background-color: #0c0d0d;
+  border: 2px solid white;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+
+  position: fixed;
+  justify-content: flex-start;
+}
+.caixalogin .inputemail, .inputsenha
+{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.caixalogin .inputsenha
+{
+  position: relative;
+}
+.caixalogin .invisivel
+{
+  opacity: 0;
+}
+.caixalogin .inputemail input,
+.inputsenha input {
+  border: none;
+  background: transparent;
+  color: white;
+
+  border-bottom: 2px solid white;
+  height: 60px;
+  width: 300px;
+  margin: 5px;
+  transition: 0.7s;
+}
+.caixalogin .inputemail input,
+.inputsenha input:focus
+{
+  outline: none;
+}
+
+.caixalogin form i {
+ 
+  color: white;
+  font-size: 30px;
+}
+
+form {
+  gap: 30px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
+}
+.inputemail, .inputsenha::placeholder
+{
+  color: white;
+}
+input:hover::placeholder {
+  color: black;
+}
+.inputemail input:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+.inputsenha input:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+.enviaformulario {
+  color: white;
+  border: 2px solid white;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  width: 400px;
+  height: 80px;
+  transition-duration: 0.5s;
+}
+
+.enviaformulario:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  transform: translateY(-9px);
+  box-shadow: 0px 0px 50px 5px #ffffff;
+}
+
+.titulologin {
+  position: relative;
+  top: 35px;
+  color: white;
+  font-size: 40px;
+}
+
+.botaocadastro {
+  top: 25px;
+  position: relative;
+  color: white;
+}
+.botaocadastro a {
+  color: white;
+  text-decoration: none;
+  transition-duration: 0ms;
+}
+.botaocadastro a:hover {
+  text-decoration: underline;
+}
+.iconeolho {
+  top: 15px;
+
+  float: left;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.7s;
+}
+.iconeolho:hover {
+  transform: translateY(-7px);
+}
+
+.olho-esquece {
+  
+  cursor: pointer;
+
+}
+.olho-esquece a:hover {
+  text-decoration: underline;
+}
+.esqueceusenha a {
+  float: right;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  top: 15px;
+  position: relative;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* AREA DE RESPONSIVIDADE*/
+@media (max-width: 1000px) {
+  .titulo {
+    border: 2px solid white;
+    font-size: 150px;
+    height: 350px;
+    width: 800px;
+  }
+  .caixalogin {
+    background-color: #0c0d0d;
+    top: 30%;
+    width: 900px;
+    height: 50vh;
+  }
+  form {
+    width: 800px;
+    height: 800px;
+  }
+  .titulologin {
+    font-size: 100px;
+  }
+  .caixalogin .inputemail input,
+  .inputsenha input {
+    font-size: 55px;
+    width: 600px;
+    height: 200px;
+  }
+  .caixalogin .enviaformulario {
+    width: 600px;
+    height: 120px;
+    font-size: 43px;
+  }
+  .caixalogin .inputemail::placeholder,
+  .inputsenha::placeholder {
+    color: white;
+  }
+  .esqueceusenha a {
+    text-align: center;
+    width: 600px;
+    font-size: 50px;
+  }
+  .botaocadastro {
+    font-size: 40px;
+  }
+  .caixalogin .inputemail i,.caixalogin .inputsenha i
+  {
+    font-size: 60px;
+  }
+  .botaocadastro
+  {
+    margin-top: 20px;
+  }
+}
